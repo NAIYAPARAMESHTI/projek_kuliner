@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#FCE4EC",
+    backgroundColor: "#DFEF96", 
     padding: 20,
   },
   card: {
@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
     fontSize: 26,
     fontWeight: "bold",
     marginBottom: 16,
-    color: "#D81B60",
+    color: "#834141",
     textAlign: "center",
   },
   description: {

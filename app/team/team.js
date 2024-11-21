@@ -167,14 +167,6 @@ export default function TeamDetail() {
   const { team } = useLocalSearchParams(); // Ambil parameter 'team' dari URL
   const selectedItem = DATA.find((item) => item.id === team); // Temukan item berdasarkan ID
 
-  if (!selectedItem) {
-    return (
-      <View style={styles.container}>
-        <Text style={styles.errorText}>Data tidak ditemukan!</Text>
-      </View>
-    );
-  }
-
   return (
     <View style={styles.container}>
       <Image source={{ uri: selectedItem.poster }} style={styles.image} />

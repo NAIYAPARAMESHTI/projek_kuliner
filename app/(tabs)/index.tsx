@@ -125,11 +125,11 @@ const DATA = [
 ];
 
 export default function HomeScreen() {
-  const [searchText, setSearchText] = useState(""); 
+  const [searchText, setSearchText] = useState<string>(""); 
   const [filteredData, setFilteredData] = useState(DATA); 
   const navigation = useNavigation();
 
-  const handleSearch = (text) => {
+  const handleSearch = (text: string) => { // Tambahkan tipe string untuk parameter 'text'
     setSearchText(text);
 
     const newData = DATA.filter((item) =>
@@ -137,6 +137,8 @@ export default function HomeScreen() {
     );
     setFilteredData(newData);
   };
+
+
 
   return (
     <View style={styles.container}>
@@ -184,7 +186,7 @@ const styles = StyleSheet.create({
     flex: 1,
     margin: 15,
     padding: 10,
-    backgroundColor: "#834141",
+    backgroundColor: "#DFEF96",
     borderRadius: 50,  
     alignItems: "center",
     justifyContent: "center",
@@ -203,7 +205,7 @@ const styles = StyleSheet.create({
     fontSize: 16,  
     fontWeight: "bold",
     textAlign: "center",
-    color: "#fff",
+    color: "#834141",
     marginBottom: 5,  
   },
   cardDescription: {
